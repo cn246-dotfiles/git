@@ -1,0 +1,8 @@
+[user]
+	name = Chuck Nemeth
+	email = chuckn246@gmail.com
+[core]
+	editor = vim
+	excludesfile = /home/chuck/.gitignore_global
+[pull]
+	rebase = true
