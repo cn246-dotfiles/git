@@ -4,5 +4,6 @@
 [core]
 	editor = vim
 	excludesfile = /home/chuck/.gitignore_global
+        pager= 
 [pull]
 	rebase = true
