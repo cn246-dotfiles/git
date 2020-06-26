@@ -5,5 +5,9 @@
 	editor = vim
 	excludesfile = /home/chuck/.gitignore_global
         pager= 
+	autocrlf = input
 [pull]
 	rebase = true
+
+[diff]
+        tool = kdiff3
