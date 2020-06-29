@@ -8,6 +8,10 @@
 	autocrlf = input
 [pull]
 	rebase = true
-
 [diff]
-        tool = kdiff3
+	tool = vimdiff
+[merge]
+	conflictstyle = diff3
+	tool = vimdiff
+[color]
+	ui = true
