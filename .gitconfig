@@ -1,6 +1,7 @@
 [user]
 	name = Chuck Nemeth
 	email = chuckn246@gmail.com
+	signingkey = F611DBDED88FE546
 [core]
 	editor = vim
 	excludesfile = /home/chuck/.gitignore_global
