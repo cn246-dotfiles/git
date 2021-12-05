@@ -2,31 +2,24 @@
 	name = Chuck Nemeth
 	email = chuckn246@gmail.com
 	signingkey = F611DBDED88FE546
-
 [core]
 	editor = vim
 	excludesfile = /home/chuck/.gitignore_global
         pager= 
 	autocrlf = input
-
 [pull]
 	rebase = true
-
 [diff]
 	tool = vimdiff
-
 [diff "ansible-vault"]
 	textconv = ansible-vault view
 	# Do not cache the vault contents
 	cachetextconv = false
-
 [merge]
 	conflictstyle = diff3
 	tool = vimdiff
-
 [merge "ansible-vault"]
 	name = ansible-vault merge driver
 	driver = /usr/local/bin/ansible-vault-merge -- %O %A %B %P
-
 [color]
 	ui = true
