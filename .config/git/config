@@ -1,0 +1,74 @@
+[alias]
+  g = grep --textconv
+
+[color]
+  ui = true
+
+[commit]
+  gpgsign = true
+
+[core]
+  editor = vim
+  pager= less
+  autocrlf = input
+
+[diff]
+  tool = vimdiff
+
+[diff "ansible-vault"]
+  textconv = ansible-vault view
+  # Do not cache the vault contents
+  cachetextconv = false
+
+[diff "lesspipe"]
+  textconv = LESSQUIET=1 lesspipe.sh
+  binary = true
+  cachetextconv = true
+
+[gpg]
+  format = ssh
+
+[grep "ansible-vault"]
+  textconv = ansible-vault view
+  cachetextconv = true
+
+[help]
+  autoCorrect = prompt
+
+[init]
+  defaultBranch = main
+
+[merge]
+  conflictstyle = diff3
+  tool = vimdiff
+
+[merge "ansible-vault"]
+  name = ansible-vault merge driver
+  driver = ~/.local/bin/ansible-vault-merge -- %O %A %B %P
+
+[pretty]
+  one = format:%C(green)%as %C(auto)%h%C(reset) %s %C(blue)%aN%C(auto)%d%C(reset)
+  two = format:%C(green)%as %C(blue)%aN <%aE>%n%C(auto)%h%C(reset) %s%C(auto)%d%C(reset)%n
+  #one = format:%C(green)%as%C(reset) %C(auto)%h%C(reset) %s %C(blue)%aN%C(reset)%C(auto)%d%C(reset)
+  #two = format:%C(green)%as%C(reset) %C(blue)%aN <%aE>%C(reset)%n%C(auto)%h%C(reset) %s%C(auto)%d%C(reset)%n
+
+[pull]
+  rebase = true
+
+[status]
+  short = true
+  branch = true
+  showStash = true
+
+[user]
+  name = Chuck Nemeth
+  email = chuckn246@gmail.com
+  signingkey = ~/.ssh/git/git_signing.pub
+
+[web]
+  browser = Firefox
+
+[browser "Firefox"]
+  cmd = open -a Firefox
+
+# vim: ft=gitconfig ts=2 sts=2 sw=2 sr et
