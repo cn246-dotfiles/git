@@ -52,8 +52,6 @@
 [pretty]
   one = format:%C(green)%as %C(auto)%h%C(reset) %s%C(auto)%d%C(reset)
   two = format:%C(green)%as %C(blue)%aN <%aE>%n%C(auto)%h%C(reset) %s%C(auto)%d%C(reset)%n
-  #one = format:%C(green)%as%C(reset) %C(auto)%h%C(reset) %s %C(blue)%aN%C(reset)%C(auto)%d%C(reset)
-  #two = format:%C(green)%as%C(reset) %C(blue)%aN <%aE>%C(reset)%n%C(auto)%h%C(reset) %s%C(auto)%d%C(reset)%n
 
 [pull]
   rebase = true
