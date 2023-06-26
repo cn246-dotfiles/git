@@ -64,7 +64,7 @@
 [user]
   name = Chuck Nemeth
   email = chuckn246@gmail.com
-  signingkey = ~/.ssh/git/git_signing.pub
+  signingkey = ~/.ssh/keys/git/git_signing.pub
 
 [web]
   browser = Firefox
