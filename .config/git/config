@@ -10,7 +10,7 @@
   verbose = true
 
 [core]
-  editor = vim
+  editor = vim -c '/^$' +startinsert +nohlsearch
   pager= less
   autocrlf = input
 
