@@ -6,6 +6,7 @@
 
 [commit]
   gpgsign = true
+  template = ~/.config/git/commit_template.txt
 
 [core]
   editor = vim
