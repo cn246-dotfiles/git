@@ -13,6 +13,7 @@
   editor = vim -c '/^$' +startinsert +nohlsearch
   pager= less
   autocrlf = input
+  attributesfile = ~/.config/git/attributes
 
 [diff]
   tool = vimdiff
