@@ -258,7 +258,7 @@ $RECYCLE.BIN/
 # C
 ##############
 # Prerequisites
-*.d
+# *.d
 
 # Object files
 *.o
