@@ -2,8 +2,14 @@
   g = grep --textconv
   glog = log --all --decorate --graph
 
+[branch]
+  sort = -committerdate
+
 [color]
   ui = true
+
+[column]
+  ui = auto
 
 [commit]
   gpgsign = true
@@ -17,6 +23,11 @@
   attributesfile = ~/.config/git/attributes
 
 [diff]
+  algorithm = histogram
+  colorMoved = plain
+  colorMovedWS = allow-indentation-change
+  nmemonicPrefix = true
+  renames = true
   tool = vimdiff
 
 [diff "ansible-vault"]
@@ -60,10 +71,18 @@
 [pull]
   rebase = true
 
+[push]
+  default = simple
+  autoSetupRemote = true
+  followTags = true
+
 [status]
   short = true
   branch = true
   showStash = true
+
+[tag]
+  sort = version:refname
 
 [user]
   name = Chuck Nemeth
