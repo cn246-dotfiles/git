@@ -34,7 +34,7 @@
 
 [core]
   # Open editor at first empty line for commit messages
-  editor = vim -c '/^$' +startinsert +nohlsearch
+  editor = vim +'silent! call search(\"^$\",\"W\")' +startinsert +nohlsearch
 
   # Use less as pager
   pager = less
@@ -70,6 +70,10 @@
 
   # Use vimdiff for diffs
   tool = vimdiff
+
+
+[diff "ansible"]
+  xfuncname = ^\\s*\\[.*\\]$
 
 
 [diff "ansible-vault"]
